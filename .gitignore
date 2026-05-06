@@ -6,3 +6,7 @@ build/
 .pytest_cache/
 .venv/
 *.env
+.gstack/
+
+# Frontend is a nested git repo (akhan157/RecoverySys) — not tracked here
+frontend/
