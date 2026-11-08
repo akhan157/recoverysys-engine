@@ -6,6 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "recoverysys-engine"
 version = "0.1.0"
 description = "High-fidelity recovery simulation engine for high-power rocketry"
+readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.10"
 dependencies = [
     "numpy>=1.24",
@@ -25,3 +27,6 @@ dev = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-v --tb=short"
+
+[tool.setuptools.packages.find]
+include = ["engine*", "api*"]
